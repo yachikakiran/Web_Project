@@ -15,7 +15,7 @@
 
 <title>Interview Preparation</title>
 
-<link rel="stylesheet" href="/Web_Project/style.css">
+<link rel="stylesheet" href="css/style.css">
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -96,9 +96,7 @@ font-size:18px;
 </li>
 
 <li>
-<a href="contact.html">
-<i class="fas fa-envelope"></i> Contact
-</a>
+<a href="contact.html" class="btn" onclick="trackClick()">Get Interview Guidance</a>
 </li>
 
 </ul>
@@ -228,6 +226,14 @@ successful interviews and career growth.
 
 </section>
 
+  <script>
+    function trackClick(){
+  gtag('event', 'button_click', {
+    'event_category': 'CTA',
+    'event_label': 'Interview Page Button'
+  });
+}
+  </script>
 
 <footer>
 
